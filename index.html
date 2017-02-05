@@ -6,30 +6,35 @@
 	<title>Ghost developer</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/materialize.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
-
 	<style type="text/css">
-		h1{margin: 0px;}
-		.valign{padding: 10px;}
-		.valign-wrapper{height: 100vh;}
+		.parallax-container{
+			height: 300px;
+		}
+		#aboutMe img{
+			margin-top: -50px;
+			border:2px solid #FFF;
+		}
 	</style>
-
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-		ga('create', 'UA-91450915-1', 'auto');
-		ga('send', 'pageview');
-	</script>
 </head>
-<body class="grey darken-4">
-	<p class="white-text">
-		(This site is under construction).
-	</p>
+<body>
+	<header class="navbar-fixed">
+		<nav class="black">
+			<div class="nav-wrapper">
+				<a href="#" class="brand-logo">Ghost dev</a>
+				<ul class="right hide-on-med-and-down">
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<div class="parallax-container">
+		<div class="parallax">
+			<img src="assets/images/header.jpg">
+		</div>
+	</div>
 	<main class="container">
-		<section id="aboutMe" class="row valign-wrapper">
-			<div class="valign card center-align">
-				<div class="col s12 m6 l4">
+		<section id="aboutMe" class="row">
+			<div class="center-align">
+				<div class="col s6 m4 l2">
 					<img src="assets/images/ghost.jpg" alt="My photo" class="responsive-img" />
 				</div>
 				<div class="col s12 m6 l8">
@@ -47,5 +52,22 @@
 			</div>
 		</section>
 	</main>
+	<footer class="center-align">
+		(This site is under construction).
+	</footer>
+	<script type="text/javascript" src="assets/js/jquery.js"></script>
+	<script type="text/javascript" src="assets/js/materialize.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.parallax').parallax();
+		});
+
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-91450915-1', 'auto');
+		ga('send', 'pageview');
+	</script>
 </body>
 </html>
